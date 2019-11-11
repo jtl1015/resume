@@ -8,7 +8,7 @@ import { ResumeDataService } from '../resume-data.service';
 })
 export class FooterComponent implements OnInit {
 
-  resumeData: ResumeData;
+  resumeData;
 
   constructor(private resumeDataService: ResumeDataService) { }
 

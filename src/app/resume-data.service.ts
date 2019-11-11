@@ -45,8 +45,7 @@ export class Footer {
   note: string;
 }
 
-export const RESUME_DATA: ResumeData = [
-  {
+export const RESUME_DATA: ResumeData =  {
     header: {
       name: "Jason Liszka",
       address: "441 Hamburg Road, Greenville PA, 16125",
@@ -108,5 +107,4 @@ export const RESUME_DATA: ResumeData = [
     footer: {
       note: "Created by Jason Liszka 2019"
     }
-  }
-]
+}
