@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResumeDataService } from '../resume-data.service';
 
 @Component({
   selector: 'app-body',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  resumeData: ResumeData;
+
+  constructor(private resumeDataService: ResumeDataService) { }
+
+  getResumeData(): void {
+    this.resumeData = this.resumeDataService.getResumeData();
+  }
 
   ngOnInit() {
+    this.getResumeData();
   }
 
 }
