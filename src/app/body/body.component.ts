@@ -8,7 +8,7 @@ import { ResumeDataService } from '../resume-data.service';
 })
 export class BodyComponent implements OnInit {
 
-  resumeData: ResumeData;
+  resumeData;
 
   constructor(private resumeDataService: ResumeDataService) { }
 
